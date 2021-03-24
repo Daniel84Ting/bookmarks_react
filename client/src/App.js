@@ -1,6 +1,7 @@
 import './App.css';
 import React, { Component } from 'react';
 import Bookmark from './components/Bookmark';
+import CreateForm from './components/CreateForm';
 const axios = require('axios');
 
 export class App extends Component {
@@ -26,8 +27,15 @@ export class App extends Component {
   render() {
     return (
       <div>
+        <CreateForm fetchdata={this.fetchdata()} />
         {this.state.bookmarks.map((bookmark, index) => {
-          return <Bookmark bookmark={bookmark} key={bookmark._id} />;
+          return (
+            <Bookmark
+              bookmark={bookmark}
+              key={bookmark._id}
+              fetchdata={this.fetchdata()}
+            />
+          );
         })}
       </div>
     );
