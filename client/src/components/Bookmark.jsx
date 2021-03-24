@@ -24,7 +24,7 @@ export class Bookmark extends Component {
           >
             {''}X{''}
           </button>
-          {this.props.bookmark.title}
+          {this.props.bookmark.title}{''}
           {this.props.bookmark.url}
           <span>{this.props.bookmark.url}</span>
         </h1>

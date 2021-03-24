@@ -48,6 +48,7 @@ export class CreateForm extends Component {
           id='url'
           placeholder='url'
         />
+        <input type='submit' />
       </form>
     );
   }
