@@ -22,10 +22,10 @@ export class Bookmark extends Component {
             onClick={() => this.deleteToDo(this.props.bookmark._id)}
             style={this.deleteButtonStyle}
           >
-            {''}X{''}
+            {''} X {''}
           </button>
-          {this.props.bookmark.title}{''}
-          {this.props.bookmark.url}
+          <span>{this.props.bookmark.title}</span>
+          {''}
           <span>{this.props.bookmark.url}</span>
         </h1>
         <UpdateForm

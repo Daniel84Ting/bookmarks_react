@@ -37,14 +37,14 @@ export class UpdateForm extends Component {
       <form onSubmit={this.handleSubmit}>
         <input
           type='text'
-          value={this.state.title}
+          value= {this.state.title}
           onChange={this.handleChange}
           id='title'
         />
         <input
           type='text'
-          value={this.state.url}
-          onChange={this.handleChange}
+          value= {this.state.url}
+          onChange= {this.handleChange}
           id='url'
         />
         <button type='submit'>Edit</button>
